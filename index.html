@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="car--inputs">
+        <input type="hidden" name="car name" class="hidden_input" value>
+        <input type="hidden" name="car model" class="hidden_input" value>
+        <input type="hidden" name="car year" class="hidden_input" value>
+    </div>
+
+    <!-- Car Name -->
+
+    <div class="choose--car-select">
+        <label>Choose Car</label>
+        <div class="custom--selector" id="car-name">
+            <div class="custom--selector-wrapper">
+                <div class="select--field">
+                    <div class="select--text">Choose Car</div>
+                </div>
+            </div>
+            <ul class="list hide list--items">
+                <li class="list--item">
+                    <p>ACURA</p>
+                </li>
+                <li  class="list--item">
+                    <p>AIWAYS</p>
+                </li>
+                <!-- <li  class="list--item">
+                    <p>ALFA ROMEO</p>
+                </li> -->
+                <!--
+                <li  class="list--item">
+                    <p>Alpina</p>
+                </li>
+                <li class="list--item">
+                    <p>ASTON MARTIN</p>
+                </li>
+                <li  class="list--item">
+                    <p>AUDI</p>
+                </li>
+                <li  class="list--item">
+                    <p>Bentley</p>
+                </li>
+                <li  class="list--item">
+                    <p>BMW</p>
+                </li>
+                <li  class="list--item">
+                    <p>Buick</p>
+                </li>
+                <li  class="list--item">
+                    <p>BYD</p>
+                </li>
+                <li  class="list--item">
+                    <p>CADILLAC</p>
+                </li>
+                <li  class="list--item">
+                    <p>CHEVROLET</p>
+                </li>
+                <li  class="list--item">
+                    <p>CHRYSLER</p>
+                </li>
+                <li  class="list--item">
+                    <p>CITROEN</p>
+                </li>
+                <li  class="list--item">
+                    <p>Dacia</p>
+                </li>
+                <li  class="list--item">
+                    <p>Dodge</p>
+                </li>
+                <li  class="list--item">
+                    <p>Ferrari
+                    </p>
+                </li>
+                <li  class="list--item">
+                    <p>FLAT</p>
+                </li>
+                <li  class="list--item">
+                    <p>FORD</p>
+                </li>
+                <li  class="list--item">
+                    <p>GEELY</p>
+                </li>
+                <li  class="list--item">
+                    <p>Genesis</p>
+                </li>
+                <li  class="list--item">
+                    <p>GMC</p>
+                </li>
+                <li  class="list--item">
+                    <p>GREAT WALL</p>
+                </li>
+                <li  class="list--item">
+                    <p>HOLDEN</p>
+                </li>
+                <li  class="list--item">
+                    <p>HONDA</p>
+                </li>
+                <li  class="list--item">
+                    <p>Hummer</p>
+                </li>
+                <li  class="list--item">
+                    <p>HYUNDAI</p>
+                </li>
+                <li  class="list--item">
+                    <p>INFINITI</p>
+                </li>
+                <li  class="list--item">
+                    <p>JAGUAR</p>
+                </li>
+                <li  class="list--item">
+                    <p>JEEP</p>
+                </li>
+                <li  class="list--item">
+                    <p>KIA</p>
+                </li>
+                <li  class="list--item">
+                    <p>Lada</p>
+                </li>
+                <li  class="list--item">
+                    <p>LAND ROVER</p>
+                </li>
+                <li  class="list--item">
+                    <p>LAND ROVER</p>
+                </li>
+                <li  class="list--item">
+                    <p>LEXUS</p>
+                </li>
+                <li  class="list--item">
+                    <p>Lincoln</p>
+                </li>
+                <li  class="list--item">
+                    <p>Lotus</p>
+                </li>
+                <li  class="list--item">
+                    <p>Luxgen</p>
+                </li>
+                <li  class="list--item">
+                    <p>Maserati</p>
+                </li>
+                <li  class="list--item">
+                    <p>MAZDA</p>
+                </li>
+                <li  class="list--item">
+                    <p>McLaren</p>
+                </li>
+                <li  class="list--item">
+                    <p>MERCEDES BENZ</p>
+                </li>
+                <li  class="list--item">
+                    <p>Mercury</p>
+                </li>
+                <li  class="list--item">
+                    <p>MG</p>
+                </li>
+                <li  class="list--item">
+                    <p>MINI</p>
+                </li>
+                <li  class="list--item">
+                    <p>MITSUBISHI</p>
+                </li>
+                <li  class="list--item">
+                    <p>NISSAN</p>
+                </li>
+                <li  class="list--item">
+                    <p>OPEL</p>
+                </li>
+                <li  class="list--item">
+                    <p>Perodua</p>
+                </li>
+                <li  class="list--item">
+                    <p>PEUGEOT</p>
+                </li>
+                <li  class="list--item">
+                    <p>Pontiac</p>
+                </li>
+                <li  class="list--item">
+                    <p>PORSCHE</p>
+                </li>
+                <li  class="list--item">
+                    <p>Proton</p>
+                </li>
+                <li  class="list--item">
+                    <p>RAM</p>
+                </li>
+                <li  class="list--item">
+                    <p>RENAULT</p>
+                </li>
+                <li  class="list--item">
+                    <p>Rolls-Royce</p>
+                </li>
+                <li  class="list--item">
+                    <p>VAUXHALL</p>
+                </li>
+                <li  class="list--item">
+                    <p>VOLKSWAGEN</p>
+                </li>
+                <li  class="list--item">
+                    <p>SMART</p>
+                </li>
+                <li  class="list--item">
+                    <p>SsangYong</p>
+                </li>
+                <li  class="list--item">
+                    <p>Rover</p>
+                </li>
+                <li  class="list--item">
+                    <p>SAAB</p>
+                </li>
+                <li  class="list--item">
+                    <p>Saturn</p>
+                </li>
+                <li  class="list--item">
+                    <p>Scion</p>
+                </li>
+                <li  class="list--item">
+                    <p>SEAT</p>
+                </li>
+                <li  class="list--item">
+                    <p>SKODA</p>
+                </li>
+                <li  class="list--item">
+                    <p>SMART</p>
+                </li>
+                <li  class="list--item">
+                    <p>SsangYong</p>
+                </li>
+                <li  class="list--item">
+                    <p>SUBARU</p>
+                </li>
+                <li  class="list--item">
+                    <p>Suzuki</p>
+                </li>
+                <li  class="list--item">
+                    <p>Tesla</p>
+                </li>
+                <li  class="list--item">
+                    <p>TOYOTA</p>
+                </li>
+                <li  class="list--item">
+                    <p>VAUXHALL</p>
+                </li>
+                <li  class="list--item">
+                    <p>VOLKSWAGEN</p>
+                </li>
+                <li  class="list--item">
+                    <p>VOLVO</p>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Car Model -->
+
+    <div class="choose--model-select">
+        <label>Choose  Model</label>
+        <div class="custom--selector" id="car-model">
+            <div class="custom--selector-wrapper">
+                <div class="select--field">
+                    <div class="select--text">Choose Model</div>
+                </div>
+            </div>
+            <ul class="list hide list--items">
+                
+                <!-- ACURA -->
+
+                <div class="model--wrapper hide" data-model="ACURA">
+                    <li class="list--item">
+                        <p>Astra</p>
+                    </li>
+                    <li class="list--item">
+                        <p>CDX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>CL</p>
+                    </li>
+                    <li class="list--item">
+                        <p>ILX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Integra</p>
+                    </li>
+                    <li class="list--item">
+                        <p>IXL</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Legend</p>
+                    </li>
+                    <li class="list--item">
+                        <p>MDX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>NSX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>RDX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>RL</p>
+                    </li>
+                    <li class="list--item">
+                        <p>RLX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>RSX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>TL</p>
+                    </li>
+                    <li class="list--item">
+                        <p>TLX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>TSX</p>
+                    </li>
+                    <li class="list--item">
+                        <p>ZDX</p>
+                    </li>
+                </div>
+
+                <!-- AIWAYS -->
+
+                <div class="model--wrapper hide" data-model="AIWAYS">
+                    <li class="list--item">
+                        <p>U5</p>
+                    </li>
+                </div>
+
+                <!-- ALFA ROMEO -->
+
+                <div class="model--wrapper hide" data-model="ALFA ROMEO">
+                    <li class="list--item">
+                        <p>147</p>
+                    </li>
+                    <li class="list--item">
+                        <p>156</p>
+                    </li>
+                    <li class="list--item">
+                        <p>159</p>
+                    </li>
+                    <li class="list--item">
+                        <p>166</p>
+                    </li>
+                    <li class="list--item">
+                        <p>4C</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Brera</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Giulia</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Giulietta</p>
+                    </li>
+                    <li class="list--item">
+                        <p>GT</p>
+                    </li>
+                    <li class="list--item">
+                        <p>GTV</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Mito</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Spider</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Spider 916</p>
+                    </li>
+                    <li class="list--item">
+                        <p>Stelvio</p>
+                    </li>
+                </div>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- Car Year -->
+
+    <div class="choose--year-select">
+        <label>Choose Year</label>
+        <div class="custom--selector" id="car-year">
+            <div class="custom--selector-wrapper">
+                <div class="select--field">
+                    <div class="select--text">Choose Year</div>
+                </div>
+            </div>
+            <ul class="list hide list--items">
+
+                <!-- Astra -->
+
+                <div class="year--wrapper hide" data-year="Astra">
+                    <li class="list--item">
+                        <p>1998</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1999</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2000</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2001</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2002</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2003</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2004</p>
+                    </li>
+                </div>
+
+                <!-- CDX -->
+
+                <div class="year--wrapper hide" data-year="CDX">
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                </div>
+
+                <!-- CL -->
+
+                <div class="year--wrapper hide" data-year="CL">
+                    <li class="list--item">
+                        <p>1997</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1998</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1999</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2000</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2001</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2002</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2003</p>
+                    </li>
+                </div>
+
+                <!-- ILX -->
+
+                <div class="year--wrapper hide" data-year="ILX">
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2022</p>
+                    </li>
+                </div>
+
+                <!-- Integra -->
+
+                <div class="year--wrapper hide" data-year="Integra">
+                    <li class="list--item">
+                        <p>1995</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1996</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1997</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1998</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1999</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2000</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2001</p>
+                    </li>
+                </div>
+                
+                <!-- IXL -->
+
+                <div class="year--wrapper hide" data-year="IXL">
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                </div>
+                
+                <!-- IXL -->
+
+                <div class="year--wrapper hide" data-year="Legend">
+                    <li class="list--item">
+                        <p>1991</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1992</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1993</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1994</p>
+                    </li>
+                    <li class="list--item">
+                        <p>1995</p>
+                    </li>
+                </div>
+
+                <!-- MDX -->
+
+                <div class="year--wrapper hide" data-year="MDX">
+                    <li class="list--item">
+                        <p>2007</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2008</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2022</p>
+                    </li>
+                </div>
+
+                <!-- NSX -->
+
+                <div class="year--wrapper hide" data-year="NSX">
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                </div>
+
+                <!-- RDX -->
+
+                <div class="year--wrapper hide" data-year="RDX">
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2022</p>
+                    </li>
+                </div>
+
+                <!-- RL -->
+
+                <div class="year--wrapper hide" data-year="RL">
+                    <li class="list--item">
+                        <p>2006</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2007</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2008</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                </div>
+
+                <!-- RLX -->
+
+                <div class="year--wrapper hide" data-year="RLX">
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2022</p>
+                    </li>
+                </div>
+
+                <!-- RSX -->
+
+                <div class="year--wrapper hide" data-year="RSX">
+                    <li class="list--item">
+                        <p>2002</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2003</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2004</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2005</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2006</p>
+                    </li>
+                </div>
+
+                <!-- TL -->
+
+                <div class="year--wrapper hide" data-year="TL">
+                    <li class="list--item">
+                        <p>2000</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2001</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2002</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2003</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2004</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2005</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2006</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2007</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2008</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                </div>
+
+                <!-- TLX -->
+
+                <div class="year--wrapper hide" data-year="TLX">
+                    
+                    <li class="list--item">
+                        <p>2006</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2007</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2008</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2018</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                </div>
+
+                <!-- TSX -->
+
+                <div class="year--wrapper hide" data-year="TSX">
+                    <li class="list--item">
+                        <p>2005</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2006</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2007</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2008</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                </div>
+
+                <!-- ZDX -->
+
+                <div class="year--wrapper hide" data-year="ZDX">
+                    <li class="list--item">
+                        <p>2009</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2010</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2011</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2012</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2013</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2014</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2015</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2016</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2017</p>
+                    </li>
+                </div>
+
+                <!-- U5 -->
+
+                <div class="year--wrapper hide" data-year="U5">
+                    <li class="list--item">
+                        <p>2019</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2020</p>
+                    </li>
+                    <li class="list--item">
+                        <p>2021</p>
+                    </li>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+        }
+        }
+    </script>
+    <script>
+    $(document).bind("contextmenu",function(e) {
+        e.preventDefault();
+    });
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
