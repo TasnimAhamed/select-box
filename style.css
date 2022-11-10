@@ -73,7 +73,7 @@ body{
 }
 .select--text {
     margin: 0;
-    line-height: 36px;
+    line-height: 20px;
     width: 100%;
     display: inline-flex;
     align-items: center;
